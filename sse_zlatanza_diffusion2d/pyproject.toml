@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=41", "wheel", "setuptools-git-versioning"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="zlatanza_diffusiоn2d"
+version = "0.0.1"
+dependencies = [
+    "numpy", "matplotlib"
+]
+requires-python = ">=3.8"
+authors = [
+    { name = "Zara Zlatanova",  email="st199767@stud.uni-stuttgart.de"}
+]
+maintainers = [
+    { name = "Zara Zlatanova",  email="st199767@stud.uni-stuttgart.de"}
+]
+description="A solver for the diffusion equation over a two dimensional square domain."
+readme = "README.md"
+license={ text = "GPLv3" }
+keywords = [ "diffusion", "equation", "temperature", "disk" ]
+classifiers=[
+"Development Status :: 3 - Alpha",
+"License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+"Programming Language :: Python :: 3 :: Only",
+"Programming Language :: Python :: 3.8",
+"Topic :: Scientific/Engineering",
+]
+
+[project.urls]
+Documentation = "https://scipython.com/book/chapter-7-matplotlib/examples/the-two-dimensional-diffusion-equation/"
+Repository = "https://github.com/Simulation-Software-Engineering/Lecture-Material/blob/main/03_building_and_packaging/pypi_exercise.mdcmd"
+
+[tool.setuptools-git-versioning]
+enabled = true
